@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    background: #EAE0D5;
+}
+.container h2{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.price-row{
+    width:90%;
+    max-width: 1100px;
+    margin-left: 325px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 25px;
+}
+#opt1.price-col{
+    background: rgb(62, 127, 201);
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+#opt2.price-col{
+    background: rgb(94, 143, 108);
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+#opt3.price-col{
+    background: rgb(90, 200, 217);
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.price-col p{
+    font-size: 22px;
+}
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500px;
+}
+.price-col h3 span{
+    font-size: 16px;
+}
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: white;
+    list-style: none;
+}
+.price-col ul li{
+    margin: 25px 0;
+}
+.price-col ul li::before{
+    content:'\2022';
+    color: rgb(188, 188, 234);
+    font-weight: bold;
+    margin-right: 8px;
+}
+.price-col ul li ul{
+    list-style: none;
+    margin: 0 30px;
+}
+.price-col ul li ul::before{
+    color: rgb(188, 188, 234);
+    font-weight: bold;
+    margin-right: 8px;
+}
+.price-col button{
+    font-weight: bold;
+    width:100%;
+    padding:14px 0;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgb(188, 188, 234);
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor:pointer;
+    transition: background 0.5s;
+}
+/* button: */
+.price-col button:hover{
+    background:white;
+    color: rgb(7, 18, 58);
+}
+
+/* each plan heading and bg color: */
+#opt1.price-col:hover{
+    background: rgb(186, 141, 74);
+    color: black;
+} 
+#opt2.price-col:hover{
+    background: rgb(186, 141, 74);
+    color: rgb(35, 31, 107);
+} 
+#opt3.price-col:hover{
+    background: rgb(186, 141, 74);
+    color: rgb(7, 18, 58);
+} 
+
+/* each plan text color: */
+.price-col ul li:hover{
+    color: black;
+}
+
+.price-col:hover{
+    transform: scale(1.1, 1.06);
+}
+.fadein{
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to {opacity:1;}
+}
+
+/* mobile version: */
+/* @media only screen and (max-width:700px){
+    container{
+        width: 80%;
+        position: absolute;
+        top:75px;
+        right: 0;
+        z-index: 2;
+    }
+} */

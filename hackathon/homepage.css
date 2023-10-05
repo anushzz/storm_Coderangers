@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.nb ul li dd a{
+    margin: 0 !important;
+}
+.c{
+    background: #dabb9a;
+    /* background: #EAE0D5; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+
+
+/* navigation bar */
+
+.logo{
+    height: 110px; width:180px;
+    float: left;
+}
+.nb{
+    height: 12%;
+    width: 100%;
+    display: inline-block;
+    align-items: right;
+}
+.nb ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.nb ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding-right: 50px;
+}
+.nb ul li a{
+    color: rgb(19, 10, 10);
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+a.active, a:hover{
+    transition: 0.5s;
+}
+.nb ul li ul li{
+    line-height: 1;
+    width: 200px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+/* homepage */
+
+
+.page{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 600px;
+    display: grid;
+    /* background: #FFD8BE;
+    background: #9FD8CB; */
+    
+    background-image: url(BG.png);
+    object-fit: contain;
+    padding: 10%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease;
+}
+/* @font-face{
+    font-family: 'AlBlack';
+    src: url(LibreBaskerville-Regular.ttf);
+} */
+.page h1{
+    color: rgb(44, 44, 123);
+    
+}
+.page p{
+    color: black;
+    font-size: 20px;
+}
+.jb{
+    width: 200px;
+    /* padding: 15px 0; */
+    text-align: center;
+    /* margin: 20px 10px; */
+    border-radius: 35px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.jb:hover{
+    border: 2px solid white;
+    background: rgb(26, 26, 103);
+    color: white;
+}
